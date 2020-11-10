@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (Copy)
+@interface NSString (Copy)<NSCopying>
 
 @end
 

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (DeepCopy)
 
+- (instancetype)deepCopy;
+
 @end
 
 NS_ASSUME_NONNULL_END

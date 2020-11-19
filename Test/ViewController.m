@@ -150,8 +150,18 @@
      */
     
 
-    [self communication];
+//    [self communication];
     
+}
+
+- (void)getAndPost {
+    [self.session GET:@"http://api.yhouse.com/m/city/dynmiclist" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+         NSLog(@"下载进度");
+     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+         NSLog(@"请求成功%@", responseObject);
+     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+         NSLog(@"请求失败");
+     }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

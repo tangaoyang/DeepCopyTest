@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking.h>
 
 @class ModelStudent;
 
@@ -14,6 +15,7 @@
 @property (nonatomic, strong) ModelStudent *student1;
 @property (nonatomic, strong) ModelStudent *student2;
 @property (nonatomic, copy) NSString *string;
+@property (nonatomic,strong) AFHTTPSessionManager *session;
 
 @end
 
